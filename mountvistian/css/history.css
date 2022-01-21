@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+/* css for glassmophormism */
+.sect-hist{
+    height: 100vh;
+    background: url('../images/history.jpeg') center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.sect-hist h1{
+    position: absolute;
+    font-size: clamp(3.5rem, 15vw + 1rem, 9rem);
+    text-transform: initial;
+    /* letter-spacing: 5px; */
+    font-weight: 700;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.glass-hist{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0, 8px, 32px, 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.h-glass-hist{
+    background: url('../images/history.jpeg') center no-repeat fixed;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 50%;
+    right: 0;
+    animation: text1 0.8s ease-in forwards;
+}
+.sect-hist::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.274);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.h-regular-hist{
+    color: white;
+    top: 50%;
+    left: 50%;
+    animation: text2 0.8s ease-in forwards;
+    animation-delay: 500ms;
+}
+@keyframes text1 {
+    0%{
+        opacity: 0;
+        transform: translate(-2em, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+@keyframes text2 {
+    0%{
+        opacity: 0;
+        transform: translate(2em, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}

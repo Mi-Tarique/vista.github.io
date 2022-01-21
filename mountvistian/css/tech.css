@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* defining variables for color Palette*/
+:root{
+    --orange: rgb(219, 177, 36);
+    --grey: #232326;
+    --white: #fff;
+}
+/* css for glassmophormism */
+.sect{
+    height: 100vh;
+    background: url('../images/tech.jpg') center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.sect h1{
+    position: absolute;
+    font-size: clamp(3.5rem, 15vw + 1rem, 9rem);
+    text-transform: initial;
+    font-weight: 700;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.glass{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0, 8px, 32px, 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.h-glass{
+    background: url('../images/tech.jpg') center no-repeat fixed;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 50%;
+    right: 0;
+    animation: text1 0.8s ease-in forwards;
+}
+.sect::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.205);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.h-regular{
+    color: white;
+    top: 50%;
+    left: 50%;
+    animation: text2 0.8s ease-in forwards;
+    animation-delay: 500ms;
+}
+@keyframes text1 {
+    0%{
+        opacity: 0;
+        transform: translate(-2em, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+@keyframes text2 {
+    0%{
+        opacity: 0;
+        transform: translate(2em, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+/* css for techniques */
+.tech{
+    width: 90%;
+    height: auto;
+    margin: 100px auto;
+    overflow-x: hidden;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 30px;
+}
+.tech h1{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 30px 0px 0px;
+}
+.tech p{
+    margin: 15px;
+    padding:0px 10px;
+    color: var(--grey);
+    text-align: justify;
+    line-height: 30px;
+}
+.tech h2{
+    margin: 45px 20px;
+    font-size: 28px;
+    color: var(--orange);
+}
+.tech h3{
+    color: rgb(230, 99, 13);
+    margin: 20px;
+}
+.fa-caret-right{
+    font-size: 1.3em;
+    margin: 2px;
+    color: var(--orange);
+}
+.tech ol li{
+    margin: 0px 50px;
+    padding: 5px;
+}
+.tech hr{
+    background-color: var(--orange);
+    height: 1px;
+    border: none;
+    margin: 20px 0px 0px;
+}
+.tech img{
+    width: 100%;
+    height: 80vh;
+    margin: 30px 0px;
+}
+.tech strong{
+    color: rgb(230, 99, 13);
+}
+
+@media screen and (max-width:900px) {
+    .sect h1{
+        font-size: clamp(3.5rem, 15vw + 1rem, 7rem);
+    }
+    .tech{
+        margin: -130px auto 0px;
+        position: relative;
+        background-color: var(--white);
+        z-index: 2;
+        border-top-left-radius: 60px;
+    }
+    .tech h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .tech h2{
+        font-size: 23px;
+        margin: 25px 0px;
+    }
+    .tech p,.tech ol li{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .tech img{
+        height: 50vh;
+        margin: 10px 0px;
+    }
+}
+@media screen and (max-width:720px){
+    .sect h1{
+        font-size: clamp(3.5rem, 15vw + 1rem, 5rem);
+    }
+}
+@media screen and (max-width:550px){
+    .sect{
+        height: 100vh;
+    }
+    .sect h1{
+        font-size: clamp(3.5rem, 15vw + 1rem, 3.5rem);
+    }
+    .tech h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .tech h2{
+        font-size: 18px;
+    }
+    .tech p, .tech ol li{
+        font-size: 12px;
+        line-height: 20px;
+        text-align: left;
+        padding: 0px;
+    }
+    .tech img{
+        height: 50vh;
+    }
+}

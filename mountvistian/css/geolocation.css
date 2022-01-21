@@ -1,0 +1,228 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap'); */
+
+/* defining variables for color Palette*/
+:root{
+  --orange: rgb(219, 177, 36);
+  --grey: #232326;
+  --white: #fff;
+}
+
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
+
+html{
+    /* font-size: 10.5%; */
+    overflow-x: hidden;
+    /* scroll-padding-top: 6rem; */
+    scroll-behavior: smooth;
+}
+
+.packages{
+    padding: 20px 9%;
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* background-color: var(--orange); */
+}
+
+.packages .pack-h{
+  color: var(--grey);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 200px;
+  background-color: var(--orange);
+
+}
+  
+.packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+  /* padding-bottom: 2rem; */
+}
+
+.packages .box-container .boxes{
+  flex: 1 1 250px;
+  /* flex: 30rem; */
+  border-radius: 5px;
+  margin-top: 50px;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.267);
+  /* border: 1px solid red; */
+  /* background-color: #fff; */
+}
+
+.packages .box-container .boxes img{
+  height: 200px;
+  width:100%;
+  object-fit: cover;
+}
+
+.packages .box-container .boxes .content{
+  padding:20px;
+}
+
+.packages .box-container .boxes .content h3{
+  font-size:16px;
+  color:#333;
+  text-transform: uppercase;
+}
+
+.packages .box-container .boxes .content h3 i{
+  color:var(--orange);
+  font-size: 25px;
+  padding-right: 2px;
+}
+
+.packages .box-container .boxes .content p{
+  font-size:14px;
+  color:#666;
+  padding:15px 5px;
+}
+
+.packages .box-container .boxes .content .stars i{
+  font-size:18px;
+  color:var(--orange);
+}
+
+.packages .box-container .boxes .content .price{
+  font-size: 14px;
+  color:#333;
+  padding-top: 10px;
+}
+  
+.packages .box-container .boxes .content .price span{
+    color:#666;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 10px;
+  background:var(--orange);
+  color:#fff;
+  padding: 8px 28px;
+  border:2px solid var(--orange);
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+}
+
+.text-main{
+  width: 100%;
+  height: auto;
+  /* margin: 100px 0; */
+  padding: 100px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #111; */
+  bottom: 0;
+  /* border: 1px solid red; */
+}
+
+.text-main .pot{
+  color: var(--grey);
+  text-transform: uppercase;
+  position: relative;
+  line-height: 60px;
+  /* border: 1px solid red; */
+}
+
+.text-main .pot h4{
+  margin-left: 48px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #111;
+  font-size: 15px;
+}
+
+.text-main .pot::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  border-radius: 4px;
+  /* margin-left: 90px; */
+  background-color: var(--orange);
+  transform: translateY(-50%);
+}
+
+.text-main h1{
+  font-size: 48px;
+  line-height: 30px;
+  font-weight: 800;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+
+.text-main p{
+  font-size: 13px;
+  color: #111;
+  /* text-transform: uppercase; */
+  margin-top: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+/* .text-inside{
+  border: 1px solid blue;
+} */
+
+/* media queries  */
+@media (min-width:1250px){
+  .packages .box-container{
+    display: grid;
+    position: relative;
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+}
+@media (max-width:991px){
+    .packages{
+      padding:20px 5%;
+    }  
+}
+@media (max-width:550px){
+    .text-main{
+      width: 75%;
+      margin: 0px auto;
+    } 
+    .text-main h1{
+      font-size: 35px;
+      line-height: 10px;
+      /* text-align: center; */
+    }
+    .text-main p{
+    font-size: 10px;
+    text-align: left;
+    }
+}
+@media (max-width:450px){
+    .text-main{
+      width: 85%;
+      margin: 0px auto;
+    } 
+    .text-main h1{
+      font-size: 30px;
+      line-height: 10px;
+      /* text-align: center; */
+    }
+    .text-main p{
+    font-size: 10px;
+    text-align: left;
+    }
+}

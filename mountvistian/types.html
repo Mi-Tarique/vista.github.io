@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types/Styles - Mountaineering</title>
+    <link rel="shortcut icon" href="./images/mount-logo.png" type="image/png">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Font awesome kit code -->
+    <script src="https://kit.fontawesome.com/3b86eebbce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/types.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/tech.css">
+</head>
+
+<body>
+
+    <!-- this is navigation -->
+    <nav id="navbar">
+        <div class="menu">
+            <div>
+                <ul>
+                    <li><a href="history.html" target="_blank">History</a></li>
+                    <li><a href="sheltering.html" target="_blank">Sheltering</a></li>
+                    <li><a href="hazard.html" target="_blank">Hazards</a></li>
+                </ul>
+
+                <div class="nav-mobile">
+                    <ul>
+                        <li class="techno"><a href="tech.html">Techniques</a></li>
+                        <li><a href="guides.html" target="_blank">Guides</a></li>
+                        <li><a href="types.html" target="_blank">Styles</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="latdev.html" target="_blank">Materials</a></li>
+                        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="index.html" class="brand">MountVista</a>
+            <div class="container-inner">
+
+                <ul class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="types.html" target="_blank">Styles</a></li>
+                    <li><a href="guides.html" target="_blank">Guides</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="tech.html" target="_blank">Techniques</a></li>
+                    <li
+                        style="border: 2px solid var(--orange); padding: 6px 15px; border-radius: 4px; font-size: 0.9em;">
+                        <a href="#" id="Sign-Btn">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-user" id="user-btn"></i>
+                <i class="fas fa-bars" id="menu-btn"></i>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+    <!-- navigation ends here -->
+
+    <!-- Signup/login form container -->
+    <section class="login-form-container">
+
+        <!-- close icon -->
+        <i class="fas fa-times" id="form-close"></i>
+
+        <div class="cont">
+            <!-- signin -->
+            <div class="user signInBx">
+                <div class="imgBx">
+                    <img src="./images/mounter.jpg" alt="pic">
+                </div>
+
+                <div class="formBx">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <input type="submit" value="Login">
+                        <p class="sign">Don't have an Account? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- signup -->
+            <div class="user signupBx">
+
+                <div class="formBx">
+                    <form>
+                        <h2>Create an Account</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Enter Your Email">
+                        <input type="password" placeholder="Create Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input type="submit" value="Sign Up">
+                        <p class="sign">Already have an Account? <a href="#" onclick="toggleForm();">Sign In</a></p>
+                    </form>
+                </div>
+
+                <div class="imgBx">
+                    <img src="./images/jack.jpg" alt="pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- login form ends here -->
+
+    <section class="zoom">
+        <img src="./parallax/mountain1.png" alt="mountain1" id="layer1">
+        <img src="./parallax/mountain2.png" alt="mountain1" id="layer2">
+        <img src="./parallax/text.png" alt="mountain1" id="text">
+    </section>
+
+    <section class="tech">
+        <hr>
+        <h1>STYLES OF MOUNTAINEERING</h1>
+        <hr>
+        <div class="content" style="margin: 30px 0px;">
+            <div class="top">
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>There are two main styles of Mountaineering:</p>
+
+        <img src="./images/styles-min.png" alt="types" width="100%" height="600px" style="margin: 30px auto;">
+
+        <p><i class="fas fa-caret-right"></i> Alpine and</p>
+        <p><i class="fas fa-caret-right"></i> Expedition.</p>
+
+        <p>Alpine mountaineering is practiced in medium sized mountains, as opposed to the expedition style's larger
+            mountains.</p>
+
+        <h2>ALPINE MOUNTAINEERS</h2>
+
+        <p>Alpine mountaineers pack light and move quick and they make a swift push to the peak. This is possible as
+            medium sized mountains, like the Alps or the Rocky Mountains, can be scaled relatively more quickly.</p>
+
+        <p>The alternative approach, called Alpine Style, is about using speed and finesse to deftly climb the mountain
+            and get back to base camp before the weather moves in. It involves fewer people, takes much less time, uses
+            less energy and resources, and is generally structurally flat. Alpine Style had its origins as a
+            counter-culture movement responding to what its proponents saw as the impure and cumbersome nature of
+            Expedition Style in the 1970's. Amongst its earliest proponents were a band of British mountaineers led by
+            Chris Bonnington who developed the approach in the European Alps and then transferred it to the Himalayas,
+            and Italian climber Reinhold Messner who took the approach to Everest in 1980, summiting the mountain by
+            himself and without bottled oxygen.</p>
+
+        <img src="./images/exped.jpg" alt="Alpine" width="100%" height="600px" style="margin: 30px auto;">
+
+        <p>At its core, Alpine Style is all about people letting go of their innate need to control an environment which
+            is naturally chaotic, uncertain and complex, and instead responding according to the natural ebb and flow of
+            changing conditions. Whilst the last thing you would do when climbing Expedition Style is to give in to the
+            elements, it's actually the first thing you do when climbing Alpine Style.</p>
+
+        <p>In its most extreme form Alpine Style is an incredibly committed way to climb, as its proponents are arguably
+            more exposed to the mountain's danger than they would be if climbing in Expedition Style. However, the key
+            difference here is that rather than relying on their equipment, as practitioners of Expedition Style do, the
+            Alpine Style practitioner (we'll call them Alpinists) relies upon themselves (it's not that Alpinists don't
+            rely on their equipment, it's just that they are ruthlessly efficient with what they do take and ensure that
+            it has multiple uses). When you watch an Alpinist in action, you are really only seeing the tip of the
+            iceberg - many years and more often than not decades of skill development and apprenticeship lies beneath
+            the surface.</p>
+
+        <p>One of the leading Alpinists today is Swiss climber Ueli Steck. More recently he's become renown for his
+            speed ascents, not only in the European Alps but also in the Himalayas. Speed climbing is perhaps best
+            described as Super Alpine Style, and in this video below you can see that it is the antithesis of Expedition
+            Style</p>
+
+        <h2>EXPEDITION MOUNTAINEERS</h2>
+
+        <p>Expedition mountaineers, on the other hand, move slow and carry much heavier loads. This is necessitated as
+            these larger mountains, like the Himalayas and the Alaska Range, take weeks or months to climb and as the
+            journey between base camps is much longer. Expeditioners can even travel with pack animals.</p>
+
+        <p>The traditional approach to mountaineering is called Expedition Style, and it's all about using sheer force
+            and manpower to forge a way up to the mountain's summit. Also known as "siege style", it uses a series of
+            stocked camps on the mountain and in between these camps are lines of fixed rope, so climbers can move up
+            and down the mountain with greater ease and require a lesser skillset and bank of experience. It involves
+            lots of people, takes a long time, uses a lot of energy and resources, and is generally very hierarchical in
+            nature.</p>
+
+        <img src="./images/alp-min.jpg" alt="expedition" width="100%" height="600px" style="margin: 30px auto;">
+
+        <p>For example, whilst you probably know that Mount Everest was first climbed by Tenzing Norgay and Sir Ed
+            Hillary in 1953, what you may not know is that the expedition was led by a British Army Colonel, 7 camps
+            were placed on the mountain, Tenzing and Ed were the second summit team (3 days earlier the first team of
+            British climbers got to within 100m of the top), the total expedition party comprised approximately 400
+            people, and that the duration of the expedition was about five months.</p>
+
+        <p>At its core, Expedition Style is all about people attempting to control and simplify an environment that is
+            naturally chaotic, uncertain and complex. It's what you most often see nowadays in the Himalayas -
+            invariably it does work on Everest but to be honest it's not really the most fun way to climb, and when
+            things go pear shaped, as they inevitably do in the high mountains, they go pear-shaped in a pretty major
+            way. This is because it is the nature of large human constructs to either break down (because they are too
+            fragile) or to be left behind (because they are too robust) during times of disruption and change.</p>
+
+        <p>Arguably, this is how 18 people were killed instantly this year in Everest Base Camp when an earthquake
+            struck, 16 climbers were killed in Everest's Icefall last year, and, as you'll see in a few month's time
+            when the latest Everest movie is released, 8 people were killed above Camp 4 in one night in 1996 (the
+            visuals of the mountain in this preview look incredibly realistic.</p>
+    </section>
+
+    <!-- newsletter starts here -->
+    <section class="letter" id="subscribe">
+        <div class="news">
+            <h2 class="tit">Newsletter</h2>
+            <p>Subscribe to our Newsletter for the Latest Updates.</p>
+            <form>
+                <div class="inputBx">
+                    <input type="email" placeholder="Enter Email" required>
+                    <button type="submit" class="butt"><i class="fa fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- newsletter ends here -->
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!-- footer starts here -->
+    <div class="photo">
+        <img src="./images/foot.png" alt="footerphoto" height="600px" width="100%" style="bottom: 0;">
+    </div>
+
+    <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <span class="logo_name">MountVista</span>
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <hr style="margin-bottom: 20px;">
+          
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">Quick Links</li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="tech.html" target="_blank">Techniques</a></li>
+              <li><a href="sheltering.html" target="_blank">Sheltering</a></li>
+              <li><a href="hazard.html" target="_blank">Hazards</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">More</li>
+              <li><a href="guides.html" target="_blank">Guides</a></li>
+              <li><a href="gallery.html" target="_blank">Gallery</a></li>
+              <li><a href="latdev.html" target="_blank">Materials</a></li>
+              <li><a href="types.html" target="_blank">Types/styles</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Account</li>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">FAQ'S</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Other</li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#subscribe">Subscribe</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="box input-box">
+              <li class="link_name">Subscribe</li>
+              <li><input type="text" placeholder="Enter your email" required></li>
+              <li><input type="button" value="Subscribe"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2021 <a href="#">MountVista.</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & condition</a>
+            </span>
+          </div>
+        </div>
+      </footer>
+    <!-- footer ends here -->
+
+
+    <script src="./javascript/gallery.js"></script>
+
+    <script type="text/javascript">
+
+        var layer1 = document.getElementById('layer1');
+
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.width = (100 + scroll / 5) + '%';
+        });
+
+        var layer2 = document.getElementById('layer2');
+
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll / 5) + '%';
+            layer2.style.left = scroll / 50 + '%';
+        });
+
+        var text = document.getElementById('text');
+
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll / 5) + '%';
+            text.style.top = - scroll / 20 + '%';
+        });
+
+    </script>
+
+</body>
+</html>

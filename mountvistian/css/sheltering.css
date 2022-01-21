@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.sect{
+    height: 100vh;
+    background: url('../images/shelte-min.jpg') center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.sect::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(25, 56, 65, 0.315);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.sect h1{
+    position: absolute;
+    font-size: clamp(3.5rem, 15vw + 1rem, 8rem);
+    letter-spacing: 2px;
+    font-weight: 900;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.glass{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0, 8px, 32px, 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h-glass{
+    background: url('../images/shelte-min.jpg') center no-repeat fixed;
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 45%;
+    right: 0;
+    animation: text1 0.8s ease-in forwards;
+}
+.h-regular{
+    color: white;
+    top: 45%;
+    left: 50%;
+    animation: text2 0.8s ease-in forwards;
+    animation-delay: 500ms;
+}
+.glass p{
+    color: white;
+    font-size: 0.8em;
+    line-height: 27px;
+    max-width: 27em;
+}
+.glass h2{
+    font-size: 18px;
+    color: white;
+}
+@keyframes text1 {
+    0%{
+        opacity: 0;
+        transform: translate(-2em, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+@keyframes text2 {
+    0%{
+        opacity: 0;
+        transform: translate(2em, -50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+.sheltering{
+    background-color: var(--white);
+    width: 90%;
+    margin: -150px auto 150px;
+    height: auto;
+    padding: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    z-index: 2;
+    position: relative;
+}
+hr{
+  margin: 20px 0;
+}
+.sheltering h1{
+    margin: 30px 0px;
+    font-size: 37px;
+    text-transform: uppercase;
+    color: var(--grey);
+    padding: 0 20px;
+}
+.sheltering p{
+    padding: 30px;
+    line-height: 28px;
+    text-align: justify;
+}
+.sheltering h2{
+    font-size: 30px;
+    margin: 0px;
+    color: var(--orange);
+    padding: 0px 35px;
+    margin-top: 20px;
+}
+.sheltering img{
+    width: 100%;
+    height: 75vh;
+    margin: 20px 0px;
+    padding: 0px 10px;
+}
+.sheltering .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sheltering .flex > div{
+    width: 50%;
+}
+.sheltering .flex:nth-child(even){
+    background-color: rgba(238, 238, 238, 0.884);
+}
+.sheltering .flex > div > div{
+    width: 50%;
+}
+
+/* media queries */
+@media screen and (max-width:1100px){
+    .sheltering img{
+        height: 80vh;
+    }
+}
+@media screen and (max-width:900px) {
+    .sect h1{
+        font-size: clamp(3.5rem, 15vw + 1rem, 7rem);
+    }
+    .sheltering{
+        margin: -130px auto 0px;
+        position: relative;
+        background-color: var(--white);
+        z-index: 2;
+        border-top-left-radius: 60px;
+    }
+    .sheltering h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .sheltering h2{
+        font-size: 23px;
+        margin: 25px 0px 0px;
+    }
+    .sheltering p,.sheltering ol li{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .sheltering img{
+        height: 50vh;
+        margin: 10px 0px;
+    }
+    .sheltering .flex{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .sheltering .flex:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .sheltering .flex > div, .sheltering .flex > div > div{
+        width: 100%;
+    }
+}
+@media screen and (max-width:720px){
+    .sect h1{
+        font-size: clamp(3.5rem, 15vw + 1rem, 5rem);
+    }
+}
+@media screen and (max-width:550px){
+    .sect{
+        height: 70vh;
+    }
+    .sect h1{
+        font-size: clamp(3.5rem, 15vw + 1rem, 3.5rem);
+    }
+    .sheltering h1{
+        font-size: 18px;
+        font-weight: 700;
+        margin: 5px 0px;
+    }
+    .sheltering h2{
+        font-size: 18px;
+        padding: 0px 10px 10px;
+    }
+    .sheltering p, .sheltering ol li{
+        font-size: 12px;
+        line-height: 20px;
+        text-align: left;
+        padding: 0px 10px;
+    }
+    .sheltering img{
+        height: 50vh;
+        margin: 15px 0px;
+    }
+}

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+  overflow-x: hidden;
+  background: #111;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* defining variables for color Palette*/
+:root{
+  --orange: rgb(219, 177, 36);
+  --grey: #232326;
+  --white: #fff;
+  --pngcolor: #151519;
+}
+.containers{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  /* border: 1px solid yellow; */
+  margin: 40px auto 100px;
+}
+.text{
+  width: 100%;
+  height: auto;
+  margin: 200px 80px 0px;
+  /* padding: 150px 0px 100px; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #111;
+  bottom: 0;
+  /* border: 1px solid red; */
+}
+.text .pot{
+  color: rgb(253, 244, 227);
+  text-transform: uppercase;
+  position: relative;
+  line-height: 45px;
+  /* border: 1px solid red; */
+}
+.text .pot h4{
+  margin-left: 48px;
+  font-weight: 300;
+  font-size: 17px;
+}
+.text .pot::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  border-radius: 4px;
+  /* margin-left: 90px; */
+  background-color: var(--orange);
+  transform: translateY(-50%);
+}
+.text h1{
+  font-size: 55px;
+  line-height: 70px;
+  font-weight: 700;
+  color: var(--orange);
+  /* color: var(--orange); */
+  /* text-transform: uppercase; */
+}
+.text p{
+  font-size: 15px;
+  color: #fbf7db;
+  /* text-transform: uppercase; */
+  margin-top: 12px;
+  letter-spacing: 1px;
+  /* text-align: center; */
+}
+
+/*Styles for product card*/
+.product .product-card{
+  z-index: 1;
+  background: rgba(184, 150, 77, 0.438);
+  position: relative;
+  width: 240px;
+  height: 370px;
+  margin: 60px 40px;
+  /* border: 1px solid var(--orange); */
+  border-radius: 10px;
+}
+.product .product-card:before{
+  content: '';
+  background: rgb(29, 27, 27);
+  /* background: rgba(255, 209, 2, 0.616); */
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.product .product-card .product-img{
+  z-index: 1;
+  position: absolute;
+  max-width: 350px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product .product-card .name{
+  z-index: 2;
+  color: var(--orange);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 110px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product .product-card .price{
+  /* z-index: 2; */
+  color: #ccc;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 75px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.product .product-card .popup-btn{
+  z-index: 2;
+  color:var(--orange);
+  border:1px solid var(--orange);
+  background: transparent;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  /* border-radius: 20px; */
+  cursor: pointer;
+}
+
+/*Styles for popup view*/
+
+.product .popup-view{
+  z-index: 100;
+  background: rgba(39, 35, 35, 0.788);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.product .popup-view.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.product .popup-card{
+  position: relative;
+  display: flex;
+  width: 800px;
+  height: 470px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product .popup-card .info{
+  z-index: 2;
+  background: rgb(12, 12, 12);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  box-sizing: border-box;
+  padding:40px;
+  border-radius: 10px;
+}
+
+.product .popup-card .close-btn{
+  color: var(--orange);
+  z-index: 3;
+  position: absolute;
+  right: 13%;
+  top: 5%;
+  font-size: 25px;
+  /* margin: 20px; */
+  cursor: pointer;
+}
+
+.product .popup-card .info h2{
+  font-size: 40px;
+  line-height: 30px;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.product .popup-card .info h2 span{
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+.product .popup-card .info p{
+  font-size: 15px;
+  margin: 20px 10px;
+  line-height: 25px;
+  color: #ccc;
+}
+
+.product .popup-card .info .price{
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0px 5px;
+  color: var(--orange);
+}
+
+.product .popup-card .info .add-cart-btn{
+  width: 100%;
+  color: var(--orange);
+  background: transparent;
+  border: 1px solid var(--orange);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 35px auto;
+  padding: 12px 50px;
+  /* border-radius: 20px; */
+}
+
+/*Responsive styles*/
+@media (max-width: 900px){
+  .product .popup-card{
+    flex-direction: column;
+    width: 550px;
+    height: 550px;
+  }
+
+  .product .popup-card .info{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .product .popup-card .info h2{
+    margin: 20px 5px 5px 5px;
+    font-size: 25px;
+  }
+
+  .product .popup-card .info h2 span{
+    font-size: 13px;
+  }
+
+  .product .popup-card .info p{
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .product .popup-card .info .price{
+    margin: 5px;
+    font-size: 18px;
+  }
+
+  .product .popup-card .info .add-cart-btn{
+    margin: 10px auto 0px;
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+  .product .popup-card .close-btn{
+    z-index: 4;
+    top: 20%;
+    left: 92%;
+  }
+}
+
+@media (max-width: 450px){
+  .text{
+    margin: 100px 80px 0px;
+  }
+  .text .pot{
+    color: rgb(253, 244, 227);
+    text-transform: uppercase;
+    position: relative;
+    line-height: 45px;
+    /* border: 1px solid red; */
+  }
+  .text .pot h4{
+    font-size: 13px;
+  }
+  .text h1{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .text p{
+    font-size: 12px;
+  }
+  .product .popup-card{
+    min-height: 750px;
+  }
+  .product .popup-card .close-btn{
+    top: 25%;
+    /* position: fixed; */
+    left: 90%;
+    font-size: 17px;
+  }
+}
+@media (max-width: 385px){
+  .product .popup-card .close-btn{
+    top: 20%;
+  }
+}

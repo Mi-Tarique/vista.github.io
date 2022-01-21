@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MountVista - Mountaineering Website</title>
+    <!-- custom css files -->
+    <link rel="shortcut icon" href="./images/mount-logo.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/geolocation.css">
+    <link rel="stylesheet" href="./css/latest.css">
+    <!-- Font awesome kit code -->
+    <script src="https://kit.fontawesome.com/3b86eebbce.js" crossorigin="anonymous"></script>
+    <!-- animate.css file -->
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/success.css">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Google Fonts Poppins Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header starts here -->
+    <header id="home">
+        <!-- this is navigation -->
+        <nav id="navbar">
+            <div class="menu">
+                <div>
+                    <ul>
+                        <li><a href="history.html" target="_blank">History</a></li>
+                        <li><a href="sheltering.html" target="_blank">Sheltering</a></li>
+                        <li><a href="hazard.html" target="_blank">Hazards</a></li>
+                    </ul>
+
+                    <div class="nav-mobile">
+                        <ul>
+                            <li class="techno"><a href="tech.html">Techniques</a></li>
+                            <li><a href="guides.html" target="_blank">Guides</a></li>
+                            <li><a href="types.html" target="_blank">Styles</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="latdev.html" target="_blank">Materials</a></li>
+                            <li><a href="gallery.html" target="_blank">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <a href="index.html" class="brand">MountVista</a>
+                <div class="container-inner">
+
+                    <ul class="list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="types.html" target="_blank">Styles</a></li>
+                        <li><a href="guides.html" target="_blank">Guides</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="tech.html" target="_blank">Techniques</a></li>
+                        <li
+                            style="border: 2px solid var(--orange); padding: 6px 15px; border-radius: 4px; font-size: 0.9em;">
+                            <a href="#" id="Sign-Btn">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="icons">
+                    <i class="fas fa-user" id="user-btn"></i>
+                    <i class="fas fa-bars" id="menu-btn"></i>
+                </div>
+
+            </div>
+            </div>
+        </nav>
+        <!-- navigation ends here -->
+        <div class="header-body">
+            <div class="container">
+
+                <div class="column col1">
+                    <span class="year">2022</span>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="container-inner">
+
+                    <div class="column col2">
+                        <small>Hike Crazy</small>
+
+                        <div class="heading">
+                            <h1 class="title animate__animated">Best Hiking Places to Explore</h1>
+                            <h1 class="slide-count">01/ <sup>03</sup></h1>
+                        </div>
+
+                        <a href="#success" class="link-main">See Stories<i class="fas fa-chevron-right"></i></a>
+
+                    </div>
+
+                    <a href="#packages" class="scroll-btn"><i class="fas fa-chevron-down"></i></a>
+                </div>
+
+                <div class="column col3">
+                    <span class="pag pag-active"></span>
+                    <span class="pag"></span>
+                    <span class="pag"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="captions">
+
+            <div class="cap-active">
+                <span>01.</span>
+                <h4>Best Hiking Places to Explore</h4>
+            </div>
+
+            <div>
+                <span>02.</span>
+                <h4>Life should have more Mountains</h4>
+            </div>
+
+            <div>
+                <span>03.</span>
+                <h4>Climbing and Beyond</h4>
+            </div>
+        </div>
+
+    </header>
+    <!-- header Ended -->
+
+    <!-- Signup/login form container -->
+    <section class="login-form-container">
+
+        <!-- close icon -->
+        <i class="fas fa-times" id="form-close"></i>
+
+        <div class="cont">
+            <!-- signin -->
+            <div class="user signInBx">
+                <div class="imgBx">
+                    <img src="./images/mounter.jpg" alt="pic">
+                </div>
+
+                <div class="formBx">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" placeholder="password" required>
+                        <input type="submit" value="Login">
+                        <p class="sign">Don't have an Account? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- signup -->
+            <div class="user signupBx">
+
+                <div class="formBx">
+                    <form>
+                        <h2>Create an Account</h2>
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Enter Your Email" required>
+                        <input type="password" placeholder="Create Password" required>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <input type="submit" value="Sign Up">
+                        <p class="sign">Already have an Account? <a href="#" onclick="toggleForm();">Sign In</a></p>
+                    </form>
+                </div>
+
+                <div class="imgBx">
+                    <img src="./images/jack.jpg" alt="pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- login form ends here -->
+
+   <div class="text-main" id="packages">
+        <div class="text-inside">
+            <div class="pot"><h4>Clubs</h4></div>
+            <h1>Top Rated Clubs</h1>
+            <p>Find Top Rated Mountaineering Clubs.</p>
+        </div>
+    </div>
+
+    <!-- geolocation starts here -->
+<section class="packages animate__animated">
+    
+    <div class="box-container">
+
+        <div class="boxes">
+            <img src="./clubs/madison.jpg" alt="Madison">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Madison</h3>
+                <p>Madison Mountaineering is recognized for well thought out strategy in leading high altitude climbing expeditions, as well as high-quality service throughout.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $65,500 <span>69,500</span> </div>
+                <a href="madison.html" target="_blank" class="btn">Get Location</a>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/b6/2b/60/private-group-at-concordia.jpg" alt="Apricot">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Apricot Tours </h3>
+                <p>Apricot Tours operate in Pakistan. The company's expertise particularly lies in tours, treks and also expedition assistance in the northern parts of Pakistan.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $22,690 <span>$23,990</span> </div>
+                <a href="apricot.html" target="_blank" class="btn">Get Location</a>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <img src="./clubs/alpine.jpg" alt="Alpine">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Alpine Pakistan </h3>
+                <p>Alpine Cultivate mountaineering and outdoor culture, specially youth by providing facilities for climbing, mountaineering and mountain related activities.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $2890 <span>$2900</span> </div>
+                <a href="alpine.html" target="_blank" class="btn">Get Location</a>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <img src="./clubs/bromwich.jpg" alt="West-Bromwich">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> West Bromwich Club, UK</h3>
+                <p>We have a diverse membership of over 200 people ranging from children to retirees who take part in a wide variety of mountaineering activities.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $10000 <span>$12000</span> </div>
+                <a href="west.html" target="_blank" class="btn">Get Location</a>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <img src="./clubs/himalayan.jpg" alt="Himalayan-club">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Himalayan Club</h3>
+                <p>To encourage and assist Himalayan travel and exploration, and to extend the knowledge of the Himalaya and adjoining mountain ranges through science, art, literature and sport.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $9000 <span>$10000</span> </div>
+                <a href="himal.html" target="_blank" class="btn">Get Location</a>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <img src="./clubs/mountainmadness.jpg" alt="Mountain-madness">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Mountain Madness</h3>
+                <p>Seattle-based mountaineering and trekking company, specializes in mountain adventure travel and has a training school for mountain and rock climbing.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $11900 <span>$12000</span> </div>
+                <a href="madness.html" target="_blank" class="btn">Get Location</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- geolocation ends here -->
+
+    <!-- latest development starts here -->
+    <section class="contain">
+        <div>
+            <h1 class="titles">Latest</h1>
+            <div class="desc">
+                <h3>Materials for Mountaineers</h3>
+                <p>Latest Developments in the Field to Protect and Supporting Hikers.</p>
+            </div>
+            <div class="player">
+                <div class="play-btn">
+                    <div class="triangle"><i class="fas fa-hiking"></i></div>
+                </div>
+                <div>
+                    <h4>Discover the Latest Developments</h4>
+                    <a href="latdev.html"><small>Lets Explore</small></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="panels">
+           <div>
+               <div class="img-panel">
+               </div>
+
+            <div class="text-panel">
+                <div>
+                    <h3>Protective</h3>
+                    <h3>Pretentative</h3>
+                    <h3 class="highlighted">Revolution.</h3>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-panel">
+                <div>
+                    <h3>Bring Revolution</h3>
+                    <p>In this Modern Era Mountaineering become Revolutionized and Introduced Materials Efficient for Daring Mountaineers.</p>
+                </div>
+            </div>
+
+            <div class="img-panel">
+            </div>
+        </div>
+    </section>
+    <!-- latest development ends here -->
+
+
+    <div class="text-main" id="success">
+        <div class="text-inside">
+            <div class="pot"><h4>Stories</h4></div>
+            <h1>Success Stories</h1>
+            <p>Read the Success Stories of Mountaineers.</p>
+        </div>
+    </div>
+     <!-- swiper starts here -->
+    <section class="discover section" id="discover">
+        <div class="discover__container container-1 swiper-container">
+            <div class="swiper-wrapper">
+
+                <!--==================== card 01 ====================-->
+                <div class="discover__card swiper-slide">
+                    <div class="place__card">
+                        <img src="./images/sibaz.jpg" alt="Sirbaz" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">2021</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Dhaulagiri</h3>
+                                <span class="place__subtitle">Sirbaz Khan</span>
+                                <span class="place__price">Seven Summits</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <a href="sirbaz.html" target="_blank"><i class="ri-arrow-right-line"></i></a>
+                        </button>
+                    </div>
+                </div>
+               <!--==================== card 02 ====================-->
+                <div class="discover__card swiper-slide">
+                    <div class="place__card">
+                        <img src="./images/sajid.png" alt="" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">2021</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">k2</h3>
+                                <span class="place__subtitle">Sajid Sadpara</span>
+                                <span class="place__price">Alpine Club</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <a href="sajid.html" target="_blank"><i class="ri-arrow-right-line"></i></a>
+                        </button>
+                    </div>
+                </div>
+             <!--==================== card 03 ====================-->
+                <div class="discover__card swiper-slide">
+                    <div class="place__card">
+                        <img src="./images/shah-kashif.png" alt="shahroze-kashif" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">2021</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Everest</h3>
+                                <span class="place__subtitle">Shahroze Kashif</span>
+                                <span class="place__price">Seven Summits</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <a href="kashif.html" target="_blank"><i class="ri-arrow-right-line"></i></a>
+                        </button>
+                    </div>
+                </div>
+                <!--==================== card 04 ====================-->
+                <div class="discover__card swiper-slide">
+                    <div class="place__card">
+                        <img src="./images/khoosweechiow.jpg" alt="Khoo-Swee-Chiow" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">2015</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Everest</h3>
+                                <span class="place__subtitle">Khoo Swee Chiow</span>
+                                <span class="place__price">Singapore Club</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <a href="chiow.html" target="_blank"><i class="ri-arrow-right-line"></i></a>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- swiper ends here -->
+
+    <!-- Gallery starts here -->
+    <div class="wrapper">
+        <div class="text">
+            <div class="text-inner">
+                <div class="pots"><h4>Gallery</h4></div>
+                <h1>Ones Who Dare.</h1>
+                <p>See the Captured Daring Moments of Our Daring Mountaineers.</p>
+                <a href="gallery.html" class="button" target="_blank">Explore</a>
+            </div>
+        </div>
+
+        <div class="images">
+            <div class="img-stripe stripe1">
+                <img src="./stripeimg/img3-min.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/p130-min.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/p138-min.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/orange-jack.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/p124-min.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/p160.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/p120-min.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/girl-hiking.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/p137-min.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/p136-min.jpg" alt="pic" height="310px" width="230px">
+                <img src="./stripeimg/img11.jpg" alt="pic" height="310px" width="230px">
+            </div>
+
+            <div class="img-stripe stripe2">
+                <img src="./stripeimg/img18-min.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/ropes-min.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/p135-min.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/girl-hiking.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/p120-min.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/yellow-rope.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/mentor.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/img18-min.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/img2.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/p160.jpg" alt="pic" height="300px" width="230px">
+                <img src="./stripeimg/p124-min.jpg" alt="pic" height="300px" width="230px">
+            </div>
+        </div>
+    </div>
+    <!-- Gallery ends here -->
+
+    <div class="text-main" id="success" style="margin-top: 80px;">
+        <div class="text-inside">
+            <div class="pot"><h4>Newsletter</h4></div>
+            <h1>Subscribe</h1>
+            <p>For Getting Latest Updates.</p>
+        </div>
+    </div>
+    <!-- newsletter starts here -->
+    <section class="letter" id="subscribe">
+    <div class="news">
+		<h2 class="tit">Newsletter</h2>
+		<p>Subscribe to our Newsletter for the Latest Updates.</p>
+		<form>
+			<div class="inputBx">
+				<input type="email" placeholder="Enter Email" required>
+				<button type="submit" class="butt"><i class="fa fa-arrow-right"></i></button>
+			</div>
+		</form>
+	</div>
+</section>
+    <!-- newsletter ends here -->
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!-- footer starts here -->
+   <div class="photo">
+       <img src="./images/foot.png" alt="footerphoto" height="550px" width="100%" style="bottom: 0;">
+    </div>
+    
+      <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <span class="logo_name">MountVista</span>
+            </div>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <hr style="margin-bottom: 20px;">
+          
+          <div class="link-boxes">
+            <ul class="box">
+              <li class="link_name">Quick Links</li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="tech.html" target="_blank">Techniques</a></li>
+              <li><a href="sheltering.html" target="_blank">Sheltering</a></li>
+              <li><a href="hazard.html" target="_blank">Hazards</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">More</li>
+              <li><a href="guides.html" target="_blank">Guides</a></li>
+              <li><a href="gallery.html" target="_blank">Gallery</a></li>
+              <li><a href="latdev.html" target="_blank">Materials</a></li>
+              <li><a href="types.html" target="_blank">Types/styles</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Account</li>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">FAQ'S</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Other</li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#subscribe">Subscribe</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="box input-box">
+              <li class="link_name">Subscribe</li>
+              <li><input type="text" placeholder="Enter your email" required></li>
+              <li><input type="button" value="Subscribe"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright © 2021 <a href="#">MountVista.</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & condition</a>
+            </span>
+          </div>
+        </div>
+      </footer>
+       <!-- footer ends here -->
+
+      <!-- swiper js file -->
+      <script src="./javascript/swiper-bundle.min.js"></script>
+      <!-- wow.js file -->
+      <script src="./javascript/wow.min.js"></script>
+    <!-- custom javascript file -->
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
